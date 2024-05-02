@@ -3,12 +3,13 @@ package org.frankframework.poc.springmultipartpoc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 
 @SpringBootApplication(exclude = {
         DispatcherServletAutoConfiguration.class,
         ErrorMvcAutoConfiguration.class,
-//        WebMvcAutoConfiguration.class
+        WebMvcAutoConfiguration.class
 })
 public class SpringBootMultipartApplication {
 

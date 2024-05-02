@@ -34,7 +34,7 @@ public class ConsoleServletDispatcher extends DispatcherServlet implements javax
         ServletRegistration.Dynamic registration = (ServletRegistration.Dynamic) servletConfig.getServletContext().getServletRegistration(servletConfig.getServletName());
         registration.setLoadOnStartup(1);
         registration.addMapping("/custom/*");
-        registration.setMultipartConfig(new MultipartConfigElement(""));
+//        registration.setMultipartConfig(new MultipartConfigElement(""));
 
        super.init(servletConfig);
     }
